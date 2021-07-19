@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bababoey</title>
+    <style>
+        button{
+            padding: 10%;
+            background: rgba(0, 255, 255, 0.897);
+            position: absolute; left: 25%;
+        }
+        body{
+            background: url("bababooey.png");
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <audio id="bababooey_sound">
+        <source src="bababooey.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="bababooey()">Bababoey</button>
+    <script>
+        var bababooey_v = document.getElementById("bababooey_sound");
+        function bababooey(){
+            bababooey_v.currentTime = 0;
+            bababooey_v.play();
+        }
+    </script>
+</body>
+</html>
